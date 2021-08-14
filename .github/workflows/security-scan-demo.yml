@@ -34,7 +34,7 @@ jobs:
       - uses: lazy-actions/gitrivy@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          image: sample
+          image: asksmruti/demo-${{ github.sha }}
 
 #       - name: Run Trivy vulnerability scanner in repo mode
 #         uses: aquasecurity/trivy-action@0.0.19
