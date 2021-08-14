@@ -1,8 +1,8 @@
-name: Github Action Demo - Rollback
+name: Automatic Revert
 
 on:
   issue_comment:
-    types: [created, edited]
+    types: [created]
 
 jobs:
   revert-commit:

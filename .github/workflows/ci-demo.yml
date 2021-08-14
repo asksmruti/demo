@@ -3,8 +3,8 @@ name: Github Action CI Demo
 on:
   push:
     branches: [ feature/demo ]
-  pull_request:
-    branches: [ feature/demo ]
+#  pull_request:
+#    branches: [ feature/demo ]
 
 jobs:
   build:
