@@ -8,7 +8,7 @@ app = Flask(__name__, template_folder='templates')
 
 @app.route("/", methods=['GET'])
 def home():
-    return render_template('home.html', task="Meet GP-2")
+    return render_template('home.html', task="Meet GP-1")
 
 
 @app.route('/test', methods=['GET'])
