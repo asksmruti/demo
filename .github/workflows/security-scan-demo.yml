@@ -31,6 +31,11 @@ jobs:
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH'
 
+      - uses: lazy-actions/gitrivy@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          image: sample
+
 #       - name: Run Trivy vulnerability scanner in repo mode
 #         uses: aquasecurity/trivy-action@0.0.19
 #         with:
