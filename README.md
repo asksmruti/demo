@@ -1,1 +1,1 @@
-# Demo for github action
+# Github action demo
