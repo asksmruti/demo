@@ -1,10 +1,12 @@
 name: Github Action CI Demo
 
 on:
-  push:
-    branches: [ feature/demo ]
-#  pull_request:
+#  push:
 #    branches: [ feature/demo ]
+  pull_request:
+    branches: [ feature/demo ]
+# Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build:
