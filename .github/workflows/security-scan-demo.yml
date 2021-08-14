@@ -1,38 +1,33 @@
-name: "Security scan - code"
+name: Github Action Security scan
 
 on:
   push:
     branches: [ feature/demo ]
 
-#  schedule:
-#    - cron: '32 9 * * 2'
 
 jobs:
-  analyze:
-    name: Analyze
-    runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
+  security-scan:
 
+    runs-on: ${{ matrix.os }}
     strategy:
-      fail-fast: false
       matrix:
-        language: [ 'python' ]
+        os: [ubuntu-latest]
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
 
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v1
+      - uses: actions/checkout@v2
+
+      - name: Run Trivy vulnerability scanner in repo mode
+        uses: aquasecurity/trivy-action@master
         with:
-          languages: ${{ matrix.language }}
+          scan-type: 'fs'
+          ignore-unfixed: true
+          format: 'template'
+          template: '@/contrib/sarif.tpl'
+          output: 'trivy-results.sarif'
+          severity: 'CRITICAL'
 
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v1
-
-
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v1
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: 'trivy-results.sarif'
