@@ -1,4 +1,4 @@
-name: Github Action Security scan
+name: Github Action Security scan Demo
 
 on:
   push:
