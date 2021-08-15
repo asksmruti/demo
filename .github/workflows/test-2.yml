@@ -1,10 +1,10 @@
-name: Github Action Security scan
+name: Test - GHA Security scan
 
 on:
   push:
-    branches: [ feature/demo ]
+    branches: [ test-1 ]
   pull_request:
-      branches: [ main ]
+    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
       - name: Build an image from Dockerfile
         run: |
           docker build -t docker.io/asksmruti/demo-${{ github.sha }} .
-      
+
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
