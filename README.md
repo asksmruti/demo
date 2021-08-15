@@ -1,5 +1,13 @@
+[![Github Action CI Demo](https://github.com/asksmruti/demo/actions/workflows/ci-demo.yml/badge.svg)](https://github.com/asksmruti/demo/actions/workflows/ci-demo.yml)
+[![Github Action Rollback Demo](https://github.com/asksmruti/demo/actions/workflows/rollback.yml/badge.svg)](https://github.com/asksmruti/demo/actions/workflows/rollback.yml)
+[![Github Action Security scan Demo](https://github.com/asksmruti/demo/actions/workflows/security-scan-demo.yml/badge.svg)](https://github.com/asksmruti/demo/actions/workflows/security-scan-demo.yml)
+
+[comment]: <> ([![Codecov]&#40;https://codecov.io/gh/asksmruti/demo/branch/main/graph/badge.svg?token=xxxxxx&#41;]&#40;https://codecov.io/gh/asksmruti/demo&#41;)
+
+![Open Issues](https://img.shields.io/github/issues/asksmruti/demo)
+![Open PRs](https://img.shields.io/github/issues-pr-raw/asksmruti/demo)
+![Coverage](https://img.shields.io/codecov/c/github/asksmruti/demo)
 # Github action demo
------------------------
 
 
 About
