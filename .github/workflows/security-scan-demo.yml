@@ -1,7 +1,7 @@
 name: Github Action Security scan
 
 on:
-  push:
+  pull_request:
     branches: [ feature/demo ]
   pull_request:
       branches: [ main ]
