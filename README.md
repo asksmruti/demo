@@ -2,6 +2,9 @@
 [![Github Action Rollback Demo](https://github.com/asksmruti/demo/actions/workflows/rollback.yml/badge.svg)](https://github.com/asksmruti/demo/actions/workflows/rollback.yml)
 [![Github Action Security scan Demo](https://github.com/asksmruti/demo/actions/workflows/security-scan-demo.yml/badge.svg)](https://github.com/asksmruti/demo/actions/workflows/security-scan-demo.yml)
 
+[![codecov](https://codecov.io/gh/asksmruti/demo/branch/main/graph/badge.svg?token=NP7RSB1OQC)](https://codecov.io/gh/asksmruti/demo)
+
+
 [comment]: <> ([![Codecov]&#40;https://codecov.io/gh/asksmruti/demo/branch/main/graph/badge.svg?token=xxxxxx&#41;]&#40;https://codecov.io/gh/asksmruti/demo&#41;)
 
 [comment]: <> (![Open Issues]&#40;https://img.shields.io/github/issues/asksmruti/demo&#41;)
